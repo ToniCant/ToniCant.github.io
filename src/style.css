@@ -1,0 +1,200 @@
+* {
+    font-family: "Montserrat", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+body{
+    background-color: antiquewhite;
+    
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.responsive-nav-bar{
+    z-index: 10;
+    background-color: #FB8B53;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 75vw;
+    overflow: hidden;
+    padding: 0px 20px;
+    margin: 20px 0px;
+    position: fixed;
+}
+
+.responsive-nav-bar a{
+    cursor: pointer;
+    text-decoration: none;
+    padding: 30px 10px;
+    color: antiquewhite; 
+    font-weight: 700;
+}
+
+.responsive-nav-bar ul{
+    list-style: none;
+    display: flex;
+}
+
+.drop-down-menu{
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    right: 10vw;
+    background-color: #515A60;
+    justify-content: space-between;
+}
+
+.drop-down-menu li{
+    padding: 15px 0px;
+}
+
+.drop-down-menu li:hover{
+    background-color: #FB8B53;
+}
+
+nav-bar{
+    display: none;
+}
+
+.container{
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    overflow: hidden;
+    text-align: center;
+}
+
+.sub-page-container{ 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 10px;/* 
+    background-color: blueviolet; */
+    width: 75vw;
+    height: 100vh;
+}
+
+.sub-page-container * {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+#sub-page-main{
+    background-image: url("../images/twoBikesBg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-attachment: fixed;
+}
+
+.contact-container{
+    background-image: url("../images/sunSetBike.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-attachment: fixed;
+}
+
+.contact-article{
+    background-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0px 0px 10px #515A60;
+    width: 90%;
+    overflow: hidden;
+    padding: 10px;
+    overflow-wrap: break-word;
+}
+
+#banner{
+    z-index: 0;
+    height: 90vh;
+    width: 100vw;
+    background-image: url("../images/beachBikers.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-position-y: 0px;
+    background-attachment: fixed;
+    /* position: absolute; */
+}
+
+#banner h1, #banner a{
+    z-index: 1;
+    color: antiquewhite;
+    text-shadow: 0px 0px 5px black;
+    text-shadow: 0px 0px 10px black;
+}
+
+#banner a{
+    position: absolute;
+    font-size: 50px;
+    margin-top: 400px;
+}
+
+#intro{
+    padding-top: 150px;
+    box-shadow: 0px 0px 100px antiquewhite;
+    background-color: antiquewhite;
+    height: 100vh;
+    width: 100vw;
+    justify-content: space-between;
+}
+
+#intro * {
+    margin: 10px;
+}
+
+.article:not(.contact-article){
+    box-shadow: 0px 0px 10px #515A60;
+    width: 90%;
+    overflow: hidden;
+    padding: 10px;
+    background-color: antiquewhite;
+}
+
+.article h1{
+    color: #FB8B53;
+}
+
+p{
+    font-weight: 500;
+}
+
+@media only screen and (min-width: 1000px) {
+    nav-bar{
+        display: flex;
+        width: 50vw;
+    }
+    .responsive-nav-bar{
+        display: none;
+    }
+    #banner{
+        background-position-y: -250px;
+    }
+    .article{
+        max-width: 50vw;
+    }
+}
