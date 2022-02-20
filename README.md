@@ -1,7 +1,7 @@
 # Web- and mobile user interface course task
 ## This website was done as a part of our course at Karelia University of applied sciences
 
-[Finished webiste here](ToniCant.github.io)
+[Finished webiste here](https://tonicant.github.io/)
 
 As a task our goal was to create a responsive website.
 
