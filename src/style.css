@@ -87,9 +87,9 @@ nav-bar{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding-top: 10px;/* 
-    background-color: blueviolet; */
-    width: 75vw;
+    padding-top: 10px;
+    background-color: rgba(250, 234, 214, 0.7);
+    width: 100%;
     height: 100vh;
 }
 
@@ -111,21 +111,41 @@ nav-bar{
 }
 
 .contact-container{
+    width: 100%;
     background-image: url("../images/sunSetBike.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-position-y: 0px;
     background-attachment: fixed;
+    flex-direction: column;
+}
+
+.contact-container *{
+    margin: 10px;
+}
+
+.contact-container img{
+    height: 100px;
+    border-radius: 5px;
+}
+
+.contact-container h2{
+    color: antiquewhite;
+    text-shadow: 0px 0px 10px black;
 }
 
 .contact-article{
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     box-shadow: 0px 0px 10px #515A60;
     width: 90%;
     overflow: hidden;
     padding: 10px;
     overflow-wrap: break-word;
+}
+
+.contact-article p{
+    font-size: small;
 }
 
 #banner{
@@ -197,4 +217,13 @@ p{
     .article{
         max-width: 50vw;
     }
+    .contact-container {
+        max-width: 30vw;
+        background-size: contain;
+        
+    }
+
+    /* .contact-article{
+        
+    } */
 }

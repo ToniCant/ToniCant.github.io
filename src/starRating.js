@@ -5,20 +5,23 @@ starTemplate.innerHTML = `
     <style>
 
     a{
+        color: grey;
         cursor: pointer;
         font-size: 30px;
     }
 
     </style>
 
-    <div>
-        <a><i class="fa fa-star"></i></a>
-        <a><i class="fa fa-star"></i></a>
-        <a><i class="fa fa-star"></i></a>
-        <a><i class="fa fa-star"></i></a>
-        <a><i class="fa fa-star"></i></a>
+    <div id="stars-container">
+        <a id="star" onclick="setRating(this)"><i class="fa fa-star"></i></a>
+        <a class="star" onclick="setRating(this)"><i class="fa fa-star"></i></a>
+        <a class="star" onclick="setRating(this)"><i class="fa fa-star"></i></a>
+        <a class="star" onclick="setRating(this)"><i class="fa fa-star"></i></a>
+        <a class="star" onclick="setRating(this)"><i class="fa fa-star"></i></a>
     </div>
 `;
+
+
 
 class StarRating extends HTMLElement{
     constructor(){
@@ -26,13 +29,6 @@ class StarRating extends HTMLElement{
         this.attachShadow({mode: 'open'});
         this.shadowRoot.appendChild(starTemplate.content.cloneNode(true));
 
-        const stars = document.querySelectorAll("a");
-
-        stars.addEventListener("click", changeRating);
-
-        function changeRating() {
-            
-        }
     }
     
 }
